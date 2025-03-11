@@ -10,7 +10,7 @@ export default function Header() {
         <header>
             <NavLink to="/">
                 <h1>MOVIE BLOOG</h1>
-            </ NavLink>
+            </NavLink>
         </header>
     );
 }
