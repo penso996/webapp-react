@@ -13,11 +13,9 @@ export default function HomePage(props) {
 
     return (
         <main>
-            <div>
-                {AppMoviesData.map((movie) => (
-                    <MovieCard key={movie.id} HomePageMoviesData={movie} />
-                ))}
-            </div>
+            {AppMoviesData.map((movie) => (
+                <MovieCard key={movie.id} HomePageMoviesData={movie} />
+            ))}
         </main>
     );
 }
