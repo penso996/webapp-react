@@ -17,18 +17,11 @@ function App() {
 
   // useState to handle moviesData  
   const [moviesData, setMoviesData] = useState([]);
-  const [reviewsData, setReviewsData] = useState([]);
 
   // FUNCTION to handle API request for Movies
   const fetchMoviesData = () => {
     axios.get(`http://localhost:3000/movies/`)
       .then((res) => setMoviesData(res.data))
-      .catch((err) => console.error("Error fetching Movies data", err));
-  };
-
-  const fetchReviewsData = () => {
-    axios.get(`http://localhost:3000/movies/${idQuery}`)
-      .then((res) => setReviewsData(res.data))
       .catch((err) => console.error("Error fetching Movies data", err));
   };
 
