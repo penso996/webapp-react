@@ -5,13 +5,19 @@
 // Import context
 
 // Import page_single_components
+import MovieCard from "../page_single_components/MovieCard.jsx";
 
-export default function HomePage() {
+export default function HomePage(props) {
 
-    // RENDER
+    const { AppMoviesData } = props;
+
     return (
         <main>
-            <h1>HOMEPAGE</h1>
+            <div>
+                {AppMoviesData.map((movie) => (
+                    <MovieCard key={movie.id} HomePageMoviesData={movie} />
+                ))}
+            </div>
         </main>
     );
 }

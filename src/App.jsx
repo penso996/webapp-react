@@ -36,7 +36,7 @@ function App() {
       <Routes>
         <Route element={<DefaultLayout />}>
           {/* HomePage */}
-          <Route path="/" element={<HomePage moviesData={moviesData} />} />
+          <Route path="/" element={<HomePage AppMoviesData={moviesData} />} />
           {/* NotFound */}
           <Route path="*" element={<NotFound />} />
         </Route>
