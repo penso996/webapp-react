@@ -17,7 +17,6 @@ main {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  background: rgb(210, 210, 210);
   background: radial-gradient(circle, rgba(210, 210, 210, 1) 0%, rgba(119, 119, 119, 1) 100%);
 }
 
@@ -29,11 +28,13 @@ header {
   align-items: center;
   justify-content: center;
   background: rgb(73, 73, 73);
-  border-bottom: solid black 1px;
+  border-bottom: 2px solid #222;
 }
 
 header h1 {
   font-size: 60px;
+  color: #f5f5f5;
+  letter-spacing: 8px;
 }
 
 header a {
@@ -44,31 +45,61 @@ header a {
 /* PAGE SINGLE COMPONENTS RULES */
 /* MovieCard.jsx */
 .movies-card {
-  border: solid black 1px;
-  padding: 5px;
-  border-radius: 5px;
+  border: 2px solid #222;
+  padding: 15px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(208, 208, 208);
   background: linear-gradient(191deg, rgba(208, 208, 208, 1) 0%, rgba(119, 119, 119, 1) 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movies-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .movies-card h3 {
   font-size: 30px;
   margin: 10px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
 }
 
 .movies-card img {
-  width: 400px;
-  height: 600px;
+  width: 350px;
+  height: 500px;
   object-fit: cover;
-  border-radius: 5px;
-  border: solid black 1px;
+  border-radius: 8px;
+  border: 3px solid #222;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.movies-card img:hover {
+  transform: scale(1.05);
 }
 
 .movies-card button {
-  padding: 6px;
-  margin: 5px;
+  padding: 8px 15px;
+  margin: 10px;
   font-weight: bold;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.movies-card button:hover {
+  background-color: #e67e22;
+  transform: translateY(-3px);
+}
+
+.movies-card button:focus {
+  outline: none;
 }
