@@ -9,7 +9,7 @@ export default function Header() {
     // RENDER
     return (
         <header>
-            <h1>HEADER</h1>
+            <h1>MOVIE BLOOG</h1>
         </header>
     );
 }
