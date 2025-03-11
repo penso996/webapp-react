@@ -2,10 +2,9 @@
 
 // Import functions from React
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 // Import axios
 import axios from "axios";
-
-// Import context
 
 // Import page_layout
 import DefaultLayout from "./page_layouts/DefaultLayout";
@@ -16,13 +15,35 @@ import NotFound from "./pages/NotFound";
 
 function App() {
 
+  // useState to handle moviesData  
+  const [moviesData, setMoviesData] = useState([]);
+  const [reviewsData, setReviewsData] = useState([]);
+
+  // FUNCTION to handle API request for Movies
+  const fetchMoviesData = () => {
+    axios.get(`http://localhost:3000/movies/`)
+      .then((res) => setMoviesData(res.data))
+      .catch((err) => console.error("Error fetching Movies data", err));
+  };
+
+  const fetchReviewsData = () => {
+    axios.get(`http://localhost:3000/movies/${idQuery}`)
+      .then((res) => setReviewsData(res.data))
+      .catch((err) => console.error("Error fetching Movies data", err));
+  };
+
+  // Call fetchMoviesData
+  useEffect(() => {
+    fetchMoviesData();
+  }, []);
+
   // RENDER
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<DefaultLayout />}>
           {/* HomePage */}
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage moviesData={moviesData} />} />
           {/* NotFound */}
           <Route path="*" element={<NotFound />} />
         </Route>
@@ -32,4 +53,4 @@ function App() {
 
 }
 
-export default App
+export default App;
