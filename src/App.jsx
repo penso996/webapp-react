@@ -11,6 +11,7 @@ import DefaultLayout from "./page_layouts/DefaultLayout";
 
 // Import pages
 import HomePage from "./pages/HomePage";
+import MovieDetail from "./pages/MovieDetail";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route element={<DefaultLayout />}>
           {/* HomePage */}
           <Route path="/" element={<HomePage AppMoviesData={moviesData} />} />
+          <Route path="/:id" element={<MovieDetail />} />
           {/* NotFound */}
           <Route path="*" element={<NotFound />} />
         </Route>
