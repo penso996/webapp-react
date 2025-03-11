@@ -69,4 +69,5 @@ header a {
 .movies-card button {
   padding: 6px;
   margin: 5px;
+  font-weight: bold;
 }
