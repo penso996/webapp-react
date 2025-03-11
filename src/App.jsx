@@ -2,7 +2,6 @@
 
 // Import functions from React
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
 // Import axios
 import axios from "axios";
 
