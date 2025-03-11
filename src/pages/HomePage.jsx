@@ -2,8 +2,6 @@
 
 // Import functions from React
 
-// Import context
-
 // Import page_single_components
 import MovieCard from "../page_single_components/MovieCard.jsx";
 
