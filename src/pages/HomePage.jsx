@@ -25,6 +25,8 @@ export default function HomePage() {
         fetchMoviesData();
     }, []);
 
+
+    // RENDER
     return (
         <main>
             {moviesData.map((movie) => (
