@@ -10,11 +10,11 @@ const ReviewsCard = (props) => {
         <div className="review-card">
             <h3>{MovieDetailReviewsData.name}</h3>
             <div>
-                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 1 ? "rgba(243, 156, 18, 0.7)" : "rgba(0, 0, 0, 0.3)" }} />
-                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 2 ? "rgba(243, 156, 18, 0.7)" : "rgba(0, 0, 0, 0.3)" }} />
-                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 3 ? "rgba(243, 156, 18, 0.7)" : "rgba(0, 0, 0, 0.3)" }} />
-                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 4 ? "rgba(243, 156, 18, 0.7)" : "rgba(0, 0, 0, 0.3)" }} />
-                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 5 ? "rgba(243, 156, 18, 0.7)" : "rgba(0, 0, 0, 0.3)" }} />
+                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 1 ? "#f39c12" : "rgba(0, 0, 0, 0.3)" }} />
+                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 2 ? "#f39c12" : "rgba(0, 0, 0, 0.3)" }} />
+                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 3 ? "#f39c12" : "rgba(0, 0, 0, 0.3)" }} />
+                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 4 ? "#f39c12" : "rgba(0, 0, 0, 0.3)" }} />
+                <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 5 ? "#f39c12" : "rgba(0, 0, 0, 0.3)" }} />
             </div>
             <p>{MovieDetailReviewsData.text}</p>
         </div>
