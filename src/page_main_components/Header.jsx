@@ -8,9 +8,7 @@ export default function Header() {
     // RENDER
     return (
         <header>
-            <NavLink to="/">
-                <h1>MOVIE BLOOG</h1>
-            </NavLink>
+            <NavLink to="/">MOVIE BLOOG</NavLink>
         </header>
     );
 }

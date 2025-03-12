@@ -38,7 +38,7 @@ function App() {
         <Route element={<DefaultLayout />}>
           {/* HomePage */}
           <Route path="/" element={<HomePage AppMoviesData={moviesData} />} />
-          <Route path="/:id" element={<MovieDetail />} />
+          <Route path="movies/:id" element={<MovieDetail />} />
           {/* NotFound */}
           <Route path="*" element={<NotFound />} />
         </Route>
