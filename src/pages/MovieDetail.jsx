@@ -46,6 +46,7 @@ export default function MovieDetail() {
                     <div className="movie-info-text">
                         <h2>{movieData.title}<small> diretto da <strong>{movieData.director}</strong></small></h2>
                         <h4>{movieData.release_year}</h4>
+                        <h4><i>{movieData.genre}</i></h4>
                         <p>{movieData.abstract}</p>
                     </div>
                 </div>
