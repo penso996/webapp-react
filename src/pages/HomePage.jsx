@@ -29,9 +29,13 @@ export default function HomePage() {
     // RENDER
     return (
         <main>
-            {moviesData.map((movie) => (
-                <MovieCard key={movie.id} HomePageMoviesData={movie} />
-            ))}
+            {moviesData.length === 0 ? (
+                <h1>Nessun film trovato</h1>
+            ) : (
+                moviesData.map((movie) => (
+                    <MovieCard key={movie.id} HomePageMoviesData={movie} />
+                ))
+            )}
         </main>
     );
 }
