@@ -12,7 +12,7 @@ const MovieCard = (props) => {
         <div className="movies-card">
             <h3>{HomePageMoviesData.title.toUpperCase()}</h3>
             <img src={HomePageMoviesData.image} alt={HomePageMoviesData.title} />
-            <NavLink to={`/movies/${HomePageMoviesData.id}`}>VEDI ALTRO...</NavLink>
+            <NavLink to={`/movies/${HomePageMoviesData.id}`}>SCHEDA DEL FILM</NavLink>
         </div>
     );
 }
