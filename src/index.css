@@ -158,8 +158,7 @@ header a:hover {
 }
 
 .movie-info-text h2 {
-  font-size: 60px;
-  letter-spacing: 2px;
+  font-size: 70px;
   color: #333;
   font-weight: bold;
 }
@@ -167,7 +166,6 @@ header a:hover {
 .movie-info-text small {
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0px;
 }
 
 .movie-info-text h4 {

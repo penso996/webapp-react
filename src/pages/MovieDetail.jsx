@@ -43,7 +43,7 @@ export default function MovieDetail() {
                     <img src={movieData.image} alt={movieData.title} />
 
                     <div className="movie-info-text">
-                        <h2>{movieData.title}<small> diretto da {movieData.director}</small></h2>
+                        <h2>{movieData.title}<small> diretto da <strong>{movieData.director}</strong></small></h2>
                         <h4>{movieData.release_year}</h4>
                         <p>{movieData.abstract}</p>
                     </div>
