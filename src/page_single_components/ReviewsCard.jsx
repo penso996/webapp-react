@@ -16,7 +16,7 @@ const ReviewsCard = (props) => {
                 <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 4 ? "#f39c12" : "rgba(0, 0, 0, 0.3)" }} />
                 <i className="fa-solid fa-star-of-life" style={{ color: reviewVote >= 5 ? "#f39c12" : "rgba(0, 0, 0, 0.3)" }} />
             </div>
-            <p>{MovieDetailReviewsData.text}</p>
+            <p>{MovieDetailReviewsData.text || "L'utente non ha scritto una recensione"}</p>
         </div>
     );
 }

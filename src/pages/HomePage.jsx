@@ -25,7 +25,6 @@ export default function HomePage() {
         fetchMoviesData();
     }, []);
 
-
     // RENDER
     return (
         <main>
