@@ -111,6 +111,11 @@ header a:hover {
   border-bottom: 1px solid #222;
   margin-bottom: 20px;
   padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.01);
 }
 
 /* PAGES RULES */
