@@ -193,3 +193,10 @@ header a:hover {
   color: #333;
   font-weight: bold;
 }
+
+/* NotFound.jsx */
+.not-found {
+  font-size: 100px;
+  margin-top: 100px;
+  color: #333;
+}
