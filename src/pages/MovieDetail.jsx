@@ -3,7 +3,7 @@
 // Import functions from React
 import { useState, useEffect } from "react";
 // Import useParams from react-router-dom
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 // Import axios
 import axios from "axios";
 
@@ -11,6 +11,9 @@ import axios from "axios";
 import ReviewsCard from "../page_single_components/ReviewsCard.jsx";
 
 export default function MovieDetail() {
+
+    // useNavigate to redirect
+    const redirect = useNavigate();
 
     // Get the movie ID from the URL
     const { id } = useParams(); // No conversion needed
@@ -26,7 +29,10 @@ export default function MovieDetail() {
                 setMovieData(res.data);
                 setReviewsData(res.data.reviews);
             })
-            .catch((err) => console.error("Error fetching Movie data", err));
+            .catch(err => {
+                console.error("Error fetching Movie data", err);
+                if (err.status === 404) redirect("/404")
+            });
     };
 
     // Call fetchMovieData
