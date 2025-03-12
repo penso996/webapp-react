@@ -83,7 +83,7 @@ header a {
   transform: scale(1.05);
 }
 
-.movies-card button {
+.movies-card p {
   padding: 8px 15px;
   margin: 10px;
   font-weight: bold;
@@ -95,11 +95,7 @@ header a {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.movies-card button:hover {
+.movies-card p:hover {
   background-color: #e67e22;
   transform: translateY(-3px);
-}
-
-.movies-card button:focus {
-  outline: none;
 }
