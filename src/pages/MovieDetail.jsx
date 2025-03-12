@@ -39,6 +39,7 @@ export default function MovieDetail() {
     return (
         <main>
             <section className="movie-detail-section">
+
                 <div className="movie-info-box">
                     <img src={movieData.image} alt={movieData.title} />
 
@@ -59,6 +60,7 @@ export default function MovieDetail() {
                         <p>Nessuna recensione disponibile.</p>
                     )}
                 </div>
+
             </section>
         </main>
     );
