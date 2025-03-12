@@ -34,13 +34,20 @@ export default function MovieDetail() {
         fetchMovieData();
     }, [id]);
 
+    console.log(movieData.image)
+
     // RENDER
     return (
         <main>
             <section className="movie-detail-section">
 
                 <div className="movie-info-box">
-                    <img src={movieData.image} alt={movieData.title} />
+
+                    {movieData.image && movieData.image !== "http://localhost:3000/movies_cover/" ? (
+                        <img src={movieData.image} alt={movieData.title} />
+                    ) : (
+                        <img src="/public/card_image_not_found.png" alt={movieData.title} />
+                    )}
 
                     <div className="movie-info-text">
                         <h2>{movieData.title}<small> diretto da <strong>{movieData.director}</strong></small></h2>
@@ -48,6 +55,7 @@ export default function MovieDetail() {
                         <h4><i>{movieData.genre}</i></h4>
                         <p>{movieData.abstract}</p>
                     </div>
+
                 </div>
 
                 <div className="movie-reviews">
