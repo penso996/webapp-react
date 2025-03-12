@@ -34,7 +34,6 @@ export default function MovieDetail() {
         fetchMovieData();
     }, [id]);
 
-
     // RENDER
     return (
         <main>
