@@ -1,5 +1,8 @@
 // MovieDetail.jsx
 
+// Import page_single_component
+import ReviewsCard from "../page_single_components/ReviewsCard.jsx"
+
 export default function MovieDetail() {
 
     // RENDER
@@ -19,7 +22,9 @@ export default function MovieDetail() {
 
                 <div className="movie-reviews">
                     <h2>REVIEWS</h2>
-
+                    <ReviewsCard />
+                    <ReviewsCard />
+                    <ReviewsCard />
                 </div>
 
             </section>

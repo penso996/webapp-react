@@ -102,6 +102,17 @@ header a:hover {
   transform: translateY(-3px);
 }
 
+/* ReviewsCard.jsx */
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+  border-bottom: 1px solid #222;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
 /* PAGES RULES */
 /* MoviedDetail.jsx */
 .movie-detail-section {
@@ -170,8 +181,6 @@ header a:hover {
   border-radius: 8px;
   width: 100%;
   padding: 40px;
-
-  height: 700px;
 }
 
 .movie-reviews h2 {
