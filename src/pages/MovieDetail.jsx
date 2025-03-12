@@ -34,8 +34,6 @@ export default function MovieDetail() {
         fetchMovieData();
     }, [id]);
 
-    console.log(movieData.image)
-
     // RENDER
     return (
         <main>
