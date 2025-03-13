@@ -69,7 +69,6 @@ export default function MovieDetail() {
                         <p>Nessuna recensione disponibile.</p>
                     )}
 
-                    <h3>LASCIA LA TUA RECENSIONE</h3>
                     <ReviewForm MovieDetailMovieId={movieData.id} fetchMovieData={fetchMovieData} />
                 </div>
 
