@@ -14,7 +14,7 @@ const ReviewForm = () => {
 
     // FUNCTION to handle input change
     const handleFormState = (e) => {
-        const { value, name } = e.target;
+        const { name, value } = e.target;
         setFormData({
             ...formData,
             [name]: value
