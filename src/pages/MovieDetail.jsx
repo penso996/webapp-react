@@ -46,20 +46,16 @@ export default function MovieDetail() {
             <section className="movie-detail-section">
 
                 <div className="movie-info-box">
-
-                    {movieData.image && movieData.image !== "http://localhost:3000/movies_cover/" ? (
-                        <img src={movieData.image} alt={movieData.title} />
-                    ) : (
-                        <img src="/public/card_image_not_found.png" alt={movieData.title} />
-                    )}
-
+                    <img
+                        src={movieData.image || "/card_image_not_found.png"}
+                        alt={movieData.title}
+                    />
                     <div className="movie-info-text">
                         <h2>{movieData.title}<small> diretto da <strong>{movieData.director}</strong></small></h2>
                         <h4>{movieData.release_year || "anno sconosciuto"}</h4>
                         <h4><i>{movieData.genre || "genere sconosciuto"}</i></h4>
                         <p>{movieData.abstract || "nessuna descrizione"}</p>
                     </div>
-
                 </div>
 
                 <div className="movie-reviews">
