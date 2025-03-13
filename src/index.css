@@ -193,6 +193,12 @@ header a:hover {
   font-weight: bold;
 }
 
+.movie-reviews h3 {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
 /* NotFound.jsx */
 .not-found {
   font-size: 100px;
