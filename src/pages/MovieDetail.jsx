@@ -9,6 +9,7 @@ import axios from "axios";
 
 // Import page_single_component
 import ReviewsCard from "../page_single_components/ReviewsCard.jsx";
+import ReviewForm from "../page_single_components/ReviewForm.jsx";
 
 export default function MovieDetail() {
 
@@ -67,6 +68,9 @@ export default function MovieDetail() {
                     ) : (
                         <p>Nessuna recensione disponibile.</p>
                     )}
+
+                    <ReviewForm />
+
                 </div>
 
             </section>
