@@ -17,7 +17,7 @@ export default function MovieDetail() {
     const redirect = useNavigate();
 
     // Get the movie ID from the URL
-    const { id } = useParams(); // No conversion needed
+    const { id } = useParams();
 
     // useState to handle movieData and reviewsData
     const [movieData, setMovieData] = useState([]);
@@ -69,7 +69,7 @@ export default function MovieDetail() {
                         <p>Nessuna recensione disponibile.</p>
                     )}
 
-                    <ReviewForm />
+                    <ReviewForm MovieDetailMovieId={movieData.id} fetchMovieData={fetchMovieData} />
 
                 </div>
 
