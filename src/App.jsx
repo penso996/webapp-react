@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DefaultLayout from "./page_layouts/DefaultLayout";
 
 // Import pages
+import AddMovie from "./pages/AddMovie";
 import HomePage from "./pages/HomePage";
 import MovieDetail from "./pages/MovieDetail";
 import NotFound from "./pages/NotFound";
@@ -21,6 +22,7 @@ function App() {
           {/* HomePage */}
           <Route path="/" element={<HomePage />} />
           <Route path="movies/:id" element={<MovieDetail />} />
+          <Route path="add_movie" element={<AddMovie />} />
           {/* NotFound */}
           <Route path="*" element={<NotFound />} />
         </Route>
