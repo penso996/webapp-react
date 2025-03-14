@@ -37,20 +37,36 @@ const ReviewForm = (props) => {
 
     // RENDER
     return (
-        <div>
+        <div className="review-form">
+            <h3>LASCIA LA TUA RECENSIONE</h3>
             <form onSubmit={handleSubmit}>
+
                 <label htmlFor="name">NOME UTENTE</label>
-                <input type="text" name="name" value={formData.name} onChange={handleFormState} />
+                <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleFormState}
+                />
 
                 <label htmlFor="vote">VOTO</label>
-                <input type="number" min="1" max="5" name="vote" value={formData.vote} onChange={handleFormState} />
+                <input
+                    type="number" min="1" max="5"
+                    name="vote"
+                    value={formData.vote}
+                    onChange={handleFormState}
+                />
 
                 <label htmlFor="text">DESCRIZIONE</label>
-                <input type="text" name="text" value={formData.text} onChange={handleFormState} />
+                <textarea
+                    name="text"
+                    value={formData.text}
+                    onChange={handleFormState}
+                ></textarea>
 
-                <button type="submit">invia</button>
+                <button type="submit">INVIA</button>
             </form>
-        </div>
+        </div >
     );
 }
 
