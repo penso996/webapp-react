@@ -34,13 +34,12 @@ const ReviewForm = (props) => {
             .catch(err => console.error(err));
     };
 
-
     // RENDER
     return (
         <div className="review-form">
             <h3>LASCIA LA TUA RECENSIONE</h3>
-            <form onSubmit={handleSubmit}>
 
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="name">NOME UTENTE</label>
                 <input
                     type="text"
@@ -66,6 +65,7 @@ const ReviewForm = (props) => {
 
                 <button type="submit">INVIA</button>
             </form>
+
         </div >
     );
 }
