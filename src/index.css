@@ -104,7 +104,8 @@ header a:hover {
 }
 
 /* ReviewForm.jsx */
-.review-form {
+/* AddMovie.jsx */
+.form {
   width: 60%;
   padding: 20px;
   border-radius: 8px;
@@ -113,32 +114,32 @@ header a:hover {
   transition: transform 0.3s ease;
 }
 
-.review-form:hover {
+.form:hover {
   transform: scale(1.02);
 }
 
-.review-form h3 {
+.form h3 {
   font-size: 24px;
   color: #333;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.review-form form {
+.form form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.review-form label {
+.form label {
   font-weight: bold;
   font-size: 16px;
   color: #222;
   text-align: left;
 }
 
-.review-form input,
-.review-form textarea {
+.form input,
+.form textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -149,18 +150,18 @@ header a:hover {
   transition: border-color 0.3s ease;
 }
 
-.review-form input:focus,
-.review-form textarea:focus {
+.form input:focus,
+.form textarea:focus {
   border-color: #f39c12;
   outline: none;
 }
 
-.review-form textarea {
+.form textarea {
   resize: vertical;
   height: 80px;
 }
 
-.review-form button {
+.form button {
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
@@ -172,7 +173,7 @@ header a:hover {
   transition: background-color 0.3s ease;
 }
 
-.review-form button:hover {
+.form button:hover {
   background-color: #e67e22;
 }
 

@@ -36,7 +36,7 @@ const ReviewForm = (props) => {
 
     // RENDER
     return (
-        <div className="review-form">
+        <div className="form">
             <h3>LASCIA LA TUA RECENSIONE</h3>
 
             <form onSubmit={handleSubmit}>
