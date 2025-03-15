@@ -3,11 +3,11 @@
 // Import functions from React
 import axios from "axios";
 import { useState } from "react";
-import { redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AddMovie = () => {
 
-    // useNavigate ro redirect
+    // useNavigate to redirect
     const navigate = useNavigate()
 
     // Set initial form state (empty)
