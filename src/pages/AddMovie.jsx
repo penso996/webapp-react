@@ -17,18 +17,11 @@ const AddMovie = () => {
 
     // FUNCTION to handle input change
     const handleFormState = (e) => {
-        const { name, value } = e.target;
-        if (name === "image") {
-            setFormData(prevState => ({
-                ...prevState,
-                [name]: e.target.files[0]
-
-            }));
-        } else
-            setFormData(prevState => ({
-                ...prevState,
-                [name]: value
-            }));
+        const { name, value, files } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: files ? files[0] : value
+        }));
     };
 
     // FUNCTION to send form data
